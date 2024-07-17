@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Time Tracker",
+  "version": "1.0",
+  "description": "Tracks time spent on websites.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": { "192": "logo192.png" }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+      "192": "logo192.png",
+      "512": "logo512.png"
+  }
+}

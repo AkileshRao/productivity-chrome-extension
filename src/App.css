@@ -1,0 +1,38 @@
+.App {
+  font-family: Arial, sans-serif;
+  width: 450px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+}
+
+li {
+  background: #444;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
